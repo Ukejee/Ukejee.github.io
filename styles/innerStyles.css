@@ -1,168 +1,245 @@
-﻿section .innerCon
+﻿body, header, section, section, article, aside, div, img, h1, h2, h3, h4, h5, h6, p, a, hr, ul, ol, li, table, tr, th, td, form, fieldset, legend, input
 {
-	clear: both;
-	height: auto;
-	min-height: 350px;
-	padding: 2.0em 0em;
-	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
-section .innerCon .container-fluid div[class*=col-] h2
+/* RESET STYLES END HERE
+-------------------------------------------------------------*/
+
+body
 {
-	padding: 0.7em 0em 0.5em 0.7em;
+	font-family: 'Segoe UI';
+	width: 100%'';
+	margin: 0;
+	padding: 0;
 }
 
-section .innerCon .container-fluid div[class*=col-] h4
-{
-	padding: 0.7em 0em 0em 0.7em;
+body .container-fluid, body .container {
+	width:100%;
+	margin: 0;
+	padding: 0;
 }
 
-
-section .innerCon .container-fluid div[class*=col-] img
-{
-	padding: 1em 2em;
-}
-
-section .innerCon .container-fluid div[class*=col-] p
-{
-	clear: both;
-	font-size: 1.2em;
-	text-align: justify;
-	padding: 0.7em 1em;
-	width: 100%;
-}
-
-section .innerCon .container-fluid div[class*=col-] p span
-{
-	font-weight: 700;
+#innerBanner {
+    background-image: url('../images/innerBanner.jpg');
 }
 
 
 
-section .innerCon .container-fluid div[class*=col-] label
-{
-	clear: both;
-	font-size: 1.2em;
-	padding: 0.5em 0.7em 0.2em 0.7em;
+#innerBanner {
+    background-position: center center;
+    background-repeat: no-repeat;
+    clear: both;
+    height: auto;
+    min-height: 200px;
+    width: 100%;
 }
 
-section .innerCon .container-fluid div[class*=col-] ul,
-section .innerCon .container-fluid div[class*=col-] ol
-{
-	clear: both;
-	text-align: justify;
-	padding: 1em 1em 1em 2.5em;
-	width: 100%;
+#innerBanner .container-fluid {
+    display: block;
+    position: relative;
+    text-align: center;
 }
 
-section .innerCon .container-fluid div[class*=col-] ul li,
-section .innerCon .container-fluid div[class*=col-] ol li
-{
-	font-size: 1.2em;
+#innerBanner .container-fluid h2 {
+    color: rgba(255, 255, 255, 1);
+    font-family: inderRegular;
+    font-size: 2em;
+    margin: auto;
+    padding: 2em 0 0 0;
+  
 }
 
-section .innerCon .container-fluid div[class*=col-] input,
-section .innerCon .container-fluid div[class*=col-] textarea
-{
-	border: 1px solid rgba(66, 139, 202, 1);
-}
+#innerBanner .container-fluid h2 span {
+ 	color: rgba(205, 0, 0, 1);
+    font-size: 2.25em;
+     padding: 0 0 5em;
 
-section .innerCon .container-fluid div[class*=col-] div[class*=group]
-{
-	margin-bottom: 0.5em;
-	margin-top: 0.5em;
-	padding: 0.5em;
-}
-
-section .innerCon .container-fluid div[class*=col-] div[class*=group] span
-{
-	color: rgba(255, 255, 255, 1);
 }
 
 
 
-section .innerCon .container-fluid div[class*=col-] input[type=submit]
-{
-	border: none;
+#innerBanner .container-fluid p {
+    color: rgba(255, 255, 255, 1);
+    font-family: inderRegular;
+    font-size: 1.2em;
+    font-style: italic;
+    padding: 0 0 0.5em 0;
 }
 
-section #teamCon
-{
-	height: auto;
-	min-height: 500px;
-	padding: 2.0em 0em;
-	text-align: center;
-}
-
-section #teamCon .container-fluid
-{
-	padding-bottom: 1.2em;
-	padding-top: 1.2em;
-}
-
-section #teamCon .container-fluid #innerHeader
-{
-	clear: both;
-	height: auto;
-	min-height: 80px;
-	padding: 1.5em 0em;
-}
-
-section #teamCon .container-fluid #innerHeader h2
-{
-	font-size: 3.5em;
-}
-
-section #teamCon .container-fluid #innerHeader h2 span
-{
-	color: rgba(255, 102, 0, 1);
-}
-
-section #teamCon .container-fluid #innerHeader p
-{
-	font-size: 1.5em;
-	font-style: italic;
-	text-align: center;
-	text-transform: lowercase;
-}
-
-section #teamCon .container-fluid div[class*=col-] div
-{
-	text-align: center;
-	margin-bottom: 0.7em;
-	padding: 0.5em;
-}
-
-section #teamCon .container-fluid div[class*=col-] div img
-{
-	border: 5px solid rgba(255, 102, 0, 1);
-	margin: 0.5em 1em;
-}
-
-section #teamCon .container-fluid div[class*=col-] div h3
-{
-	color: rgba(255, 102, 0, 1);
-	font-size: 2.0em;
-}
-
-section #teamCon .container-fluid div[class*=col-] div h3 span
-{
-	color: rgba(0, 20, 40, 1);
-}
+/** InnerBanner ends here **/
 
 
-section #teamCon .container-fluid div[class*=col-] div h4
-{
-	color: rgba(100, 100, 100, 1);
-	font-size: 1.5em;
-	padding: 0.2em;
+#innerCon {
+    clear: both;
+    font-family: inderRegular;
+    min-height: 400px;
+    padding: 2em;
+    width: 100%;
 }
 
-section #teamCon .container-fluid div[class*=col-] div p
-{
-	color: rgba(100, 100, 100, 1);
-	font-size: 1.2em;
-	padding: 0.8em 0.2em;
-	text-align: justify;
+#innerCon .container {
+    padding-bottom: 1em;
+    padding-top: 1em;
 }
+
+#innerCon .container h2 {
+    padding-bottom: 1em;
+    padding-top: 0.7em;
+}
+
+#innerCon .container div[class*=col-] {
+    padding-bottom: 1.5em;
+}
+
+#innerCon .container div[class*=col-] img {
+     border-top: 2px solid rgba(15, 104, 155, 1);
+    margin: 0 0 1.5em 0;
+}
+
+#innerCon .container div[class*=col-] h2 {
+    clear: both;
+    color: rgba(155, 104, 155, 1);
+    font-family: inderRegular;
+    font-size: 1.6em;
+    padding: 0.5rem 0;
+    vert-align: bottom;
+    vertical-align: text-bottom;
+}
+
+#innerCon .container div[class*=col-] h2 span {
+     color: rgba(100, 100, 100, 1);
+     font-size: 1.3rem;
+}
+
+#innerCon .container div[class*=col-] h4 {
+     background-color: rgba(15, 104, 155, 1);
+    clear: both;
+    color: rgba(255, 255, 255, 1);
+    font-family: inderRegular;
+    font-size: 1.5rem;
+    padding: 0.5em 0.5em;
+  vertical-align: text-bottom;
+}
+
+#innerCon .container div[class*=col-] h3 {
+     color: rgba(15, 104, 155, 1);
+     clear: both;
+     font-family: inderRegular;
+     font-size: 1.25rem;
+     padding: 0.5rem 0.5rem;
+}
+
+#innerCon .container div[class*=col-] h5 {
+     clear: both;
+     font-family: inderRegular;
+     font-size: 1.25rem;
+     font-style: italic;
+     padding: 0.5rem 0.5rem;
+}
+
+
+
+#innerCon .container div[class*=col-] ul {
+     clear: both;
+     list-style: none;
+     margin: 0 0 2rem 0;
+     padding: 0 0 0 1rem;
+}
+
+#innerCon .container div[class*=col-] ul li span {
+     color: rgba(15, 104, 155, 1);
+}
+
+
+
+ #innerCon .container div[class*=col-] p {
+    clear: both;
+    font-family: inderRegular;
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    text-align: justify;
+}
+
+#innerCon .container div[class*=col-] blockquote {
+     background-color: rgba(220, 220, 220, 1);
+    clear: both;
+    color: rgba(50, 50, 50, 1);
+    font-family: inderRegular;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    text-align: justify;
+}
+
+
+
+#innerCon .container div[class*=col-] div.row div[class*=col-] img {
+     border-top: 2px solid rgba(15, 104, 155, 1);
+}
+
+#innerCon .container div[class*=col-] div.row div[class*=col-] h2 {
+    height: auto;
+    font-family: inderRegular;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+#innerCon .container div[class*=col-] div.row div[class*=col-] p {
+    font-size: 0.8em;
+    padding: 0;
+    text-align: left;
+}
+
+#innerCon .container div[class*=col-] div[class*=form] {
+    margin-bottom: 1.5em;
+}
+
+#innerCon .container div[class*=col-] div[class*=form] label  {
+    color: rgba(205, 0, 0, 1);
+    clear: both;
+    font-size: 1.1em;
+    font-weight: 100;
+    width: 100%;
+}
+
+#innerCon .container div[class*=col-] div[class*=form] input  {
+    clear: both;
+    text-align:left;
+    width: 100%;
+}
+
+#innerCon .container div[class*=col-] div[class*=form] select  {
+    clear: both;
+    width: 100%;
+}
+
+#innerCon .container div[class*=col-] div[class*=form] textarea  {
+  
+}
+
+#innerCon .container p  {
+    clear: both;
+}
+
+#innerCon .container h6  {
+    border-bottom: 2px dotted rgba(255, 255, 255, 1);
+    border-top: 2px dotted rgba(255, 255, 255, 1);
+    background-color: rgba(15, 104, 155, 1);
+    color: rgba(255, 255, 255, 1);
+    clear: both;
+    font-size: 2em;
+    margin: 2em 0;
+    padding: 0.5em 0;
+}
+
+
+ #innerCon .container form{
+     width: 100%;
+}
+
+
+
+
 
