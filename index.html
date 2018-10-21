@@ -1,0 +1,312 @@
+﻿ <!DOCTYPE html>
+<html>
+
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tutor Search, Team Webmatterz" />
+<meta name="keywords" content="Tutor Search, Team Webmatterz" />
+<title> Tutor Search </title>
+
+<link href="styles/fonts.css" rel="stylesheet" type="text/css" />
+<link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="styles/jquery-ui-1.8.18.custom.css" rel="stylesheet" type="text/css"/>
+<link href="styles/site.css" class="type/text" rel="stylesheet" />
+
+<!-- #EndEditable -->
+
+<script type="text/javascript" src="scripts/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui-1.8.18.custom.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="scripts/site.js"></script> 
+
+<!-- #EndEditable scripts -->
+
+
+</head>
+
+
+<body>
+
+	<div id="padder">
+		<div class="container-fluid">
+			<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+				<p>  <span class="glyphicon glyphicon-phone-alt"> Call Us: </span> +2347033716203 &nbsp; &nbsp;
+				 <span class="glyphicon glyphicon-envelope"> Mail Us: </span> info@teamwebmatterz.com.ng </p> 
+			</div>
+			
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+				<p class="text-right">Connect with us: 
+					<a href="#" id="fb" target="_blank" title="Like Our Page on facebook"></a>
+					<a href="#" id="tw" target="_blank" title="Follow us on twitter"></a>
+					<a href="#" id="lin" target="_blank" title="Follow us on linkedin"></a>
+	
+	
+				</p>
+			</div>
+	
+		</div>
+	</div>
+	
+	<header>
+		<div class="container-fluid">
+				 <div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									 <h1 title="tutor"><a href="/Home"><img class="img-responsive" src="images/index2.jpg" /></a></h1>
+									 <p>...connecting you to your nearby tutor</p>
+							</div>
+
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 pull-right">
+									 <nav>
+												<a class="btn btn-success" href="/Schools/"><span class="glyphicon glyphicon-home"></span> Find Tutors!</a>
+									 </nav>
+							</div>
+				 </div>
+		</div>
+</header>
+	
+	
+<section>
+
+		<div id="indexBanner">
+				<div class="container">
+					
+								 <h2>
+											<span class="glyphicon glyphicon-search"></span> Find the right <strong><span style="color: rgba(255, 0, 0, 1);"> Tutor </span></strong> for your child, with Ease!
+								 </h2>
+						<p>...connecting you to your nearby tutor</p>
+			 </div>
+	
+			 <div class="container">
+						<div class="row">
+								 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+											<div class="input-group input-group-lg">
+													 <span class="input-group-addon bg-success" id="subjectSpan">1</span>
+													 <select aria-describedby="subjectSpan" class="form-control" id="ddlSubject">
+																<option>Select a Subject</option>
+																<option> Mathematics</option>
+																<option> English Language </option>
+													 </select>
+											</div>
+								 </div>
+	
+								 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+											<div class="input-group input-group-lg">
+													 <span class="input-group-addon bg-success" id="stateSpan">2</span>
+													 <select aria-describedby="stateSpan" class="form-control" id="ddlState" onchange="getArea()">
+																<option value="Select a State">Select a State</option>
+																<option value="Abia">Abia</option>
+																<option value="Adamawa">Adamawa</option>
+																<option value="Akwa Ibom">Akwa Ibom</option>
+																<option value="Anambra">Anambra</option>
+																<option value="Bauchi">Bauchi</option>
+																<option value="Bayelsa">Bayelsa</option>
+																<option value="Benue">Benue</option>
+																<option value="Borno">Borno</option>
+																<option value="Cross River">Cross River</option>
+																<option value="Delta">Delta</option>
+																<option value="Ebonyi">Ebonyi</option>
+																<option value="Edo">Edo</option>
+																<option value="Ekiti">Ekiti</option>
+																<option value="Enugu">Enugu</option>
+																<option value="Gombe">Gombe</option>
+																<option value="Imo">Imo</option>
+																<option value="Jigawa">Jigawa</option>
+																<option value="Kaduna">Kaduna</option>
+																<option value="Kano">Kano</option>
+																<option value="Katsina">Katsina</option>
+																<option value="Kebbi">Kebbi</option>
+																<option value="Kogi">Kogi</option>
+																<option value="Kwara">Kwara</option>
+																<option value="Lagos">Lagos</option>
+																<option value="Nasarawa">Nasarawa</option>
+																<option value="Niger">Niger</option>
+																<option value="Ogun">Ogun</option>
+																<option value="Ondo">Ondo</option>
+																<option value="Osun">Osun</option>
+																<option value="Oyo">Oyo</option>
+																<option value="Plateau">Plateau</option>
+																<option value="Rivers">Rivers</option>
+																<option value="Sokoto">Sokoto</option>
+																<option value="Taraba">Taraba</option>
+																<option value="Yobe">Yobe</option>
+																<option value="Zamfara">Zamfara</option>
+																<option value="FCT">FCT</option>
+													 </select>
+											</div>
+								 </div>
+	
+								 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+											<div class="input-group input-group-lg">
+													 <span class="input-group-addon bg-success" id="localSpan">3</span>
+													 <select aria-describedby="localSpan" class="form-control" id="ddlArea">
+																<option>Select a Locality</option>
+																<option>Select a State First</option>
+													 </select>
+											</div>
+								 </div>
+	
+								 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+											<button class="btn btn-success" onclick="BtnSearch()"><span class="glyphicon glyphicon-search"></span> Search Now!</button>
+								 </div>
+						</div>
+			 </div>
+	
+	</div>
+</section>
+
+	
+<section>
+		<div id="indexWelcome">
+				<div class="container-fluid">
+					<div class="text-center col-sm-8 col-sm-offset-2 col-xs-12">
+						<h2> Are you a <span> Tutor? </span></h2>
+						
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. </p>
+					  <br>
+
+          <a href="create.html"><span class="glyphicon "></span> Become A Tutor!</a></div>
+				</div>
+			</div>
+</section>
+
+<section id="secondRow">
+	<div class="container-fluid">
+
+			<div  class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="firstCol">
+						<h3> Do you need <span>Home tutors </span>for your kids?</h3>
+						<p> <ul> <li> Put your kids ahead, </li>
+							<li>Improve performance in class, </li>
+							<li> get help with homework. </li> <br>
+							<li> Hire tutors you can trust and are experienced in teaching and impacting knowledge. </li>
+						</ul></p>
+						 <a href="create.html"><span class="glyphicon "></span> Search for A Tutor!</a>
+				</div>
+				</div>
+				
+				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" style="margin-left: 0px;">
+					<div class="secondCol">
+				
+			</div>
+				</div>
+	<!-- End of secondRow Section -->
+	
+	<div id="indexNewsletter">
+			<div class="container-fluid">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<h2>Subscribe to Our Awesome Newsletter</h2>
+					<p>Get the latest and greatest news about suitable and nearby tutors around you</p>
+				</div>
+				
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Email e.g. username@domainname.com">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button">Subscribe Now!</button>
+							</span>
+						</div><!-- /input-group -->
+				</div>
+			</div>
+		</div>
+
+	</div>
+	 	
+</section>
+
+
+<div id="indexActivities">
+		<div class="container wow rubberBand" data-wow-duration="1s" data-wow-delay="1s">
+				<h2><span class="glyphicons glyphicons-stats"></span> Our Statistics</h2>
+	 </div>
+
+	 <div class="container">
+				<div class="row">
+						 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow slideInUp" data-wow-duration="1s" data-wow-delay="1s">
+									<div>
+											 <h2>40</h2>
+											 <span class="glyphicons glyphicons-mixed-buildings"></span>
+											 <p>Registered Tutors</p>
+									</div>
+						 </div>
+
+						 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow slideInUp" data-wow-duration="1s" data-wow-delay="1s">
+									<div>
+											 <h2>0</h2>
+											 <span class="glyphicons glyphicons-briefcase"></span>
+											 <p>Jobs Posted</p>
+									</div>
+						 </div>
+
+						 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow slideInUp" data-wow-duration="1s" data-wow-delay="1s">
+									<div>
+											 <h2>10</h2>
+											 <span class="glyphicons glyphicons-map"></span>
+											 <p>Areas Covered</p>
+									</div>
+						 </div>
+				</div>
+	 </div>
+</div>	
+
+	
+<section style="min-height:200px;">
+<div id="indexContact">
+	<div class="container-fluid">
+			
+		<div  class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<h3> Follow Us On </h3>
+			<hr>
+		<p>
+				<a href="https://web.facebook.com/groups/753967454676863/about/" id="fb" target="_blank" title="Like Our Page on facebook"></a> 
+				<a href="#" id="tw" target="_blank" title="Follow us on twitter"> </a> 
+				<a href="#" id="gg" target="_blank" title="Follow us on google++"></a>
+			</p>
+			<p>&copy; 2018. Tutor Search Project, <br> All right reserved</p>
+			<p>Developed by: <a href="http://www.webmatterz.com.ng" target="_blank" title="Web Matterz Nigeria" style="margin-left: -20px;">Team WebMatterz </a></p>
+
+		</div>
+		
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="margin-left: 0px;">
+			<h3> Contact Us </h3>
+			<hr>
+		<p><span class="glyphicon glyphicon-home"></span> NaijaHack, Lagos state, Nigeria. </p>
+		<p><span class="glyphicon glyphicon-envelope"></span> info@teamwebmatterz.com </p> 
+		<p><span class="glyphicon glyphicon-earphone"></span>   +2347033716203</p>
+
+		</div>
+		
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 pull-right">
+		<h3> Quick Links </h3>
+			<hr>
+		<li> <a href="about.html"> About Us </a> </li>
+		<li> <a href="news.html"> Tutor Search </a></li>
+		<li> <a href="nspc.html"> Contact Us </a></li>
+		<li> <a href="resources.html"> Our Policy </a></li>
+		</div>		
+	</div>
+</div>
+</section>
+<!-- End of IndexContact-->
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5b76eb2cf31d0f771d83e6b5/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+
+
+</html>
