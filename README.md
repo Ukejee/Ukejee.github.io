@@ -1,6 +1,6 @@
 NaijaHacks Hackathon 2018
 Team name - Webmatterz
-Team members - Adedeji Khaleel-ur-rahmon
+Team members - Adedeji Khaleel-ur-rahmon - khaleelrahmon@gmail.com
              -  Ajumoko Ibrahim Temitope
              -  Ukeje Emeka Emmanuel - ukejee3@gmail.com
 Section - Education
