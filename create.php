@@ -17,13 +17,6 @@
 
 <!-- #EndEditable -->
 
-<script type="text/javascript" src="scripts/jquery-1.10.1.min.js"></script>
-    <script type="text/javascript" src="scripts/jquery-ui-1.8.18.custom.min.js"></script>
-    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
-
-<script type="text/javascript" src="scripts/site.js"></script> 
-
-<!-- #EndEditable scripts -->
 
 
 </head>
@@ -55,13 +48,12 @@
 		<div class="container-fluid">
 				 <div class="row">
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-									 <h1 title="tutor"><a href="/Home"><img class="img-responsive" src="images/index2.jpg" /></a></h1>
-									 <p>...connecting you to your nearby tutor</p>
-							</div>
+                            <h1 title="tutor"><a href="index.html"><img class="img-responsive" src="images/logo.png" /></a></h1>
+									</div>
 
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 pull-right">
 									 <nav>
-												<a class="btn btn-success" href="/Schools/"><span class="glyphicon glyphicon-home"></span> Find Tutors!</a>
+												<a class="btn btn-success" href="search"><span class="glyphicon glyphicon-home"></span> Find Tutors!</a>
 									 </nav>
 							</div>
 				 </div>
@@ -77,7 +69,7 @@
 <div id="innerCon">
      <div class="container">
           <div class="row">
-               <form method="post" action="fullmemberresponse.php">
+               <form method="post" action="receivedForm.php" target="_blank">
                     <h2 class="text-center"> Registration Form</h2>
                     <div class="text-danger text-center validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
 </ul></div>
@@ -90,21 +82,32 @@
                                         Full name  
                                    </label>
                                   
-								 <input class="form-control" placeholder=" " type="text" required data-val="true" data-val-required="Company's name field is required." name="nameCon" value="" />
+								 <input class="form-control" placeholder="Surname First" type="text" required data-val="true" data-val-required="Name field is required." name="name" value="" />
+                              </div>
+
+                              <div class="form-group">
+                                   <label for="yearBusiness2"> Gender </label>
+
+                                   <select class="form-control" data-val="true" data-val-required="The vear(s) in business field is required." name="sex" required="required"><option> Select </option>
+<option> Male </option>
+<option> Female </option>
+<option> Prefer not to say </option>
+
+</select>
                               </div>
                              
                               <div class="form-group">
                                    <label>
                                         Email Address                                     
                                    </label>
-                                   <input class="form-control" placeholder=" " type="email" required data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-required="The Email field is required." name="email" value="" />
+                                   <input class="form-control" placeholder="dynamite@gmail.com" type="email" required data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-required="The Email field is required." name="email" value="" />
                               </div>
 
                               <div class="form-group">
                                    <label>
                                         Telephone
                                    </label>
-                                   <input class="form-control" placeholder=" " type="tel" required data-val="true" data-val-required="The Telephone No field is required." name="phoneNum" value="" />
+                                   <input class="form-control" placeholder="e.g +2340000000" type="tel" required data-val="true" data-val-required="The Telephone No field is required." name="tel" value="" />
                               </div>
                               
                               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -112,7 +115,7 @@
                                    <label>
                                         State                               
                                    </label>
-                                   <input class="form-control" placeholder=" " type="text" required data-val="true" data-val-required="City field is required." name="city" value="" />
+                                   <input class="form-control" placeholder=" " type="text" required data-val="true" data-val-required="City field is required." name="state" value="" />
                               </div>
                               </div>
                               
@@ -121,7 +124,7 @@
                                    <label>
                                         City                                
                                    </label>
-                                   <input class="form-control" placeholder=" " type="text" required data-val="true" data-val-required="State No field is required." name="state" value="" />
+                                   <input class="form-control" placeholder=" " type="text" required data-val="true" data-val-required="State No field is required." name="city" value="" />
                               </div>
                               </div>
                              
@@ -131,7 +134,7 @@
                                    <label>
                                         L.g.a                                  
                                    </label>
-                                   <input class="form-control" placeholder=" " type="text" required data-val="true" data-val-required="Country field is required." name="country" value="" style="width:115%;" />
+                                   <input class="form-control" placeholder=" " type="text" required data-val="true" data-val-required="Country field is required." name="locality" value="" style="width:115%;" />
                               </div>
 									</div>
 							
@@ -142,13 +145,13 @@
                   
                               <div class="form-group">
                                    <label for="yearBusiness2"> Major </label>
-                                   <input class="form-control" placeholder="Membership Number " type="number" required data-val="true" data-val-required="The Lastname field is required." name="memberNum" value="" />
+                                   <input class="form-control" placeholder="Subjects/Courses" type="text" required data-val="true" data-val-required="The Lastname field is required." name="major" value="" />
                                                             
 </div>
                                 <div class="form-group">
                                    <label for="yearBusiness2"> Teaching Experience </label>
 
-                                   <select class="form-control" data-val="true" data-val-required="The vear(s) in business field is required." name="yearBus" required="required"><option> Select </option>
+                                   <select class="form-control" data-val="true" data-val-required="The vear(s) in business field is required." name="experience" required="required"><option> Select </option>
 <option> Just Starting </option>
 <option> Less than 3years </option>
 <option> 4-10years </option>
@@ -159,7 +162,7 @@
                               <div class="form-group">
                                    <label for="yearBusiness2"> What class do you teach? </label>
 
-                                   <select class="form-control" data-val="true" data-val-required="The vear(s) in business field is required." name="yearBus" required="required"><option> Select </option>
+                                   <select class="form-control" data-val="true" data-val-required="The vear(s) in business field is required." name="class" required="required"><option> Select </option>
 <option> Nursery </option>
 <option> Primary </option>
 <option> Jss Level </option>
@@ -172,7 +175,7 @@
                               <label>
                            Passport Photo           
                                    </label>
-                                   <input class="form-control" type="file" required data-val="true" data-val-required="The Lastname field is required." name="memProof" value="" />
+                                   <input class="form-control" type="file" required data-val="true" data-val-required="The Lastname field is required." name="photo" value="" />
                               </div>
                           
 
@@ -183,7 +186,7 @@
                               <div class="form-group">
                                    <label> Brief Details about you </label>
 
-                                   <textarea class="form-control" data-val="true" data-val-required="Destination field is required." id="descriptionTb3" name="destination" placeholder=" " required="required" rows="5" type="text">
+                                   <textarea class="form-control" data-val="true" data-val-required="Destination field is required." id="descriptionTb3" name="details" placeholder="Teaching method, qualification, specialization e.t.c " required="required" rows="5" type="text">
 							</textarea>
 </div>
                               </div>
@@ -207,12 +210,12 @@
 			<h3> Follow Us On </h3>
 			<hr>
 		<p>
-				<a href="https://web.facebook.com/groups/753967454676863/about/" id="fb" target="_blank" title="Like Our Page on facebook"></a> 
+				<a href="#" id="fb" target="_blank" title="Like Our Page on facebook"></a> 
 				<a href="#" id="tw" target="_blank" title="Follow us on twitter"> </a> 
 				<a href="#" id="gg" target="_blank" title="Follow us on google++"></a>
 			</p>
 			<p>&copy; 2018. Tutor Search Project, <br> All right reserved</p>
-			<p>Developed by: <a href="http://www.webmatterz.com.ng" target="_blank" title="Web Matterz Nigeria" style="margin-left: -20px;">Team WebMatterz </a></p>
+			<p>Developed by: <a href="#" target="_blank" title="Web Matterz Nigeria" style="margin-left: -20px;"><img src="images/favicon.png" style="border-radius: 10px;"> Team WebMatterz </a></p>
 
 		</div>
 		
@@ -237,6 +240,12 @@
 </div>
 </section>
 <!-- End of IndexContact-->
+
+
+<script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/myScript.js"></script>
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">

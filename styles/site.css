@@ -97,10 +97,12 @@ header .container-fluid div[class*=col-] h1 a {
 
 header .container-fluid div[class*=col-] h1 a img {
     float: left;
-    height: 50px;
+	height: 100px;
+	width: 50%;
 }
 
 header .container-fluid div[class*=col-] h1 a:hover {
+	background-image: url('../images/logo_transparent.png');
     text-decoration: none;
 }
 
@@ -117,7 +119,7 @@ header .container-fluid div[class*=col-] p {
 
 header .container-fluid div[class*=col-] nav {
     float: right;
-    padding: 1em 0;
+    padding: 2em 0;
 }
 
 header .container-fluid div[class*=col-] nav a {
@@ -417,7 +419,7 @@ section #indexNewsletter .container-fluid div[class*=col-] span button:hover
     color: rgba(255, 255, 255, 1);
     height: 200px;
     margin: 0.2em auto;
-    padding: 1em;
+    padding: 0.5em 1em;
     width: 45%;
 }
 
@@ -429,7 +431,7 @@ section #indexNewsletter .container-fluid div[class*=col-] span button:hover
     font-family: Agency FB;
     font-size: 2.5em;
     font-weight: 100;
-    margin: 1em 0;
+    margin: 1em 0 0.5em;
     padding: 0em 0 0 0;
 }
 

@@ -43,7 +43,7 @@ body .container-fluid, body .container {
 }
 
 #innerBanner .container-fluid h2 {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(205, 0, 0, 1);
     font-family: inderRegular;
     font-size: 2em;
     margin: auto;
@@ -52,7 +52,7 @@ body .container-fluid, body .container {
 }
 
 #innerBanner .container-fluid h2 span {
- 	color: rgba(205, 0, 0, 1);
+ 	color: rgba(255, 255, 255, 1);
     font-size: 2.25em;
      padding: 0 0 5em;
 
@@ -100,17 +100,16 @@ body .container-fluid, body .container {
 
 #innerCon .container div[class*=col-] h2 {
     clear: both;
-    color: rgba(155, 104, 155, 1);
+    color: rgba(0, 105, 0, 1);
     font-family: inderRegular;
-    font-size: 1.6em;
-    padding: 0.5rem 0;
-    vert-align: bottom;
-    vertical-align: text-bottom;
+    font-size: 2.8em;
+    padding: 1em 0;
+
 }
 
 #innerCon .container div[class*=col-] h2 span {
-     color: rgba(100, 100, 100, 1);
-     font-size: 1.3rem;
+     color: rgba(205, 0, 0, 1);
+     font-size: 1.2em;
 }
 
 #innerCon .container div[class*=col-] h4 {
@@ -238,6 +237,7 @@ body .container-fluid, body .container {
  #innerCon .container form{
      width: 100%;
 }
+
 
 
 
