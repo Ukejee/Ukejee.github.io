@@ -202,8 +202,9 @@ section #indexBanner .container div[class*=col-] button {
      display: block;
      font-family: inderRegular;
 	 font-size: 1.5rem;
+	 margin-left:  10px;
 	 height: 50px;
-     width: 100%;
+     width: 90%;
 }
 
 section #indexBanner .container div[class*=col-] div.btn-group div[class*=dropdown-menu] {
@@ -251,7 +252,7 @@ section #indexWelcome .container-fluid a {
 		color: rgba(155, 0, 0, 1);
 		font-size: 1.2em;
 		font-weight: 600;
-		margin: 4rem auto;
+		margin: 2rem 0em 2em;
 		padding: 0.5rem 1rem;
 		text-decoration: none;
    }
@@ -364,9 +365,10 @@ section #indexWelcome .container-fluid a {
 	width: 100%;
 }
 
+
 section #indexNewsletter h2
 {	
-	margin-top: 0.4em;	
+	margin-top: 0.6em;	
 }
 
 
@@ -377,14 +379,14 @@ section #indexNewsletter p
 
 section #indexNewsletter input
 {	
-	margin-top: 1.5em;	
+	margin-top: 2em;	
 }
 
 section #indexNewsletter .container-fluid div[class*=col-] span button
 {
 	background-color: rgba(205, 0, 0, 1);
 	color: rgba(0, 0, 0, 1);
-	margin-top: 1.5em;	
+	margin-top: 2em;	
 }
 
 section #indexNewsletter .container-fluid div[class*=col-] span button:hover

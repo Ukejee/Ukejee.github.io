@@ -72,7 +72,7 @@
 
 <div id="innerBanner">
     <div class="container-fluid">
-        <h2> Thank You <br> <span> We Found 3 Tutors in your locality </span></h2>
+        <h2> Thank You <br> <span> We Found 5 Tutors in your locality </span></h2>
     </div>
 </div>
 
@@ -85,7 +85,8 @@
 				<thead> 
 					<tr> 
                     <th> ID </th>
-                    <th> Name </th>
+					<th> Name </th>
+					<th> Telephone </th>
                     <th> Email Address </th>
                     <th> Major </th>
                     <th> State </th>
@@ -101,7 +102,8 @@
                     ?>
                      <tr>
                     <td> <?php echo $rows['id']; ?> </td>
-                    <td><?php echo $rows['name']; ?> </td>
+					<td><?php echo $rows['name']; ?> </td>
+					<td><?php echo $rows['tel']; ?> </td>
                     <td> <?php echo $rows['email']; ?> </td>
                     <td> <?php echo $rows['major']; ?> </td>
                     <td> <?php echo $rows['state']; ?> </td>
@@ -179,7 +181,7 @@ var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
 s1.async=true;
-s1.src='https://embed.tawk.to/5b76eb2cf31d0f771d83e6b5/default';
+s1.src='https://embed.tawk.to/5bcf486619b86b5920c09ca7/default';
 s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);

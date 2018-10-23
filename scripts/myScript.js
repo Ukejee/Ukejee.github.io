@@ -324,12 +324,12 @@ function BtnSearch() {
     var stateddl2 = $('#ddlState option:selected').html();
     var areaddl2 = $('#ddlArea option:selected').html();
 
-    switch (catddl2) {
-        case "Mathematics":
-            window.location.href = "view.php";
+    switch (stateddl2) {
+        case "Lagos":
+            window.location.href = "Lagos/" + "Find/" + areaddl2;
             break;
         case "English Language":
-            window.location.href = "view.php";
+            window.location.href = "English Language/" + "Find/" + stateddl2 + "/" + areaddl2;
             break;
         case "Elementary Science":
             window.location.href = "view.php";
