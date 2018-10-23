@@ -292,7 +292,7 @@ section #indexWelcome .container-fluid a {
     background-repeat: no-repeat;
     background-color: green;
 	height: auto;
-	margin: 0em 0 0em;
+	margin: 0em 0em;
 	min-height: 400px;	
 	padding: 0em;
 	width: 102%;
@@ -312,14 +312,14 @@ section #indexWelcome .container-fluid a {
 #secondRow .container-fluid .firstCol ul li
 {
 	color: rgba(205, 255, 255, 1);
-	font-size: 1.4em;
-	margin: 10px 20px;
+	font-size: 1.2em;
+	margin: 10px 30px 20px;
 }
 
 #secondRow .container-fluid .firstCol span
 {
 	
-	color: rgba(255, 102, 0, 1);
+	color: rgba(255, 255, 255, 1);
 	font-style: italic;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bolder;
